@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom/dist";
 
 const Login = () => {
     return (
@@ -15,7 +16,7 @@ const Login = () => {
                     <label htmlFor="email" hidden>Mot de passe</label>
                     <input id="password" name="password" type="password" placeholder="Mot de passe" />
                     <button className="button">Se connecter</button>
-                    <p><a href="">Créer un compte</a></p>
+                    <p><NavLink to="/inscription">Créer un compte</NavLink></p>
                 </form>
                 <div className="form-decoration">
                     <img src="/assets/logo/logo-full-white.png" alt="" />

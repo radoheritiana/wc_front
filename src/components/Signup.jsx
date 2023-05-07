@@ -1,10 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom/dist";
 
-const Login = () => {
+const Signup = () => {
     return (
         <main>
-            <section className="signup-container">
+            <section className="signin-container">
                 <form action="">
+                <img class='small-screen-logo' src="/assets/logo/logo-partial.svg" alt="fdsf" hidden/>
                     <hgroup>
                         <h2>S'enregistrer</h2>
                         <p>Bienvenu sur Onyrix</p>
@@ -16,9 +18,9 @@ const Login = () => {
                     <label htmlFor="email" hidden>Mot de passe</label>
                     <input id="password" name="password" type="password" placeholder="Resaisissez votre mot de passe" />
                     <button className="button">S'inscrire</button>
-                    <p><a href="">Se connecter</a></p>
+                    <p><NavLink to="/connexion">Se connecter</NavLink></p>
                 </form>
-                <div className="signup-form-decoration">
+                <div className="form-decoration">
                     <img src="/assets/logo/logo-full-white.png" alt="" />
                 </div>
             </section>
@@ -27,4 +29,4 @@ const Login = () => {
 }
 
 
-export default Login;
+export default Signup;

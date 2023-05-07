@@ -9,7 +9,6 @@ const Iir = () => {
         const onScroll = () => {
           const element = parentRef.current;
           const { top, bottom } = element.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
     
             handleScroll(top);
           

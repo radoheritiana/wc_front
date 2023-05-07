@@ -125,7 +125,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className={active === 5 ? "nav-item active" : "nav-item"}>
-          <NavLink className="nav-link" to="/login" onClick={handleLinkClick}>
+          <NavLink className="nav-link" to="/connexion" onClick={handleLinkClick}>
             <img src="/assets/icons/login.svg" className="nav-img" alt="icon" />
             <span className="link-text display-none">Login</span>
           </NavLink>

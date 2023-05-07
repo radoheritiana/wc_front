@@ -10,6 +10,7 @@ import Prediction from './components/Prediction';
 import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
 import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,8 +35,9 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/prediction" element={<Prediction />} />
             <Route path="/iir" element={<Iir />} />
-            <Route path="/a_propos" element={<About  />} />
-            <Route path='/login' element={<Login />} />
+            <Route path="/a_propos" element={<About />} />
+            <Route path='/connexion' element={<Login />} />
+            <Route path='/inscription' element={<Signup />} />
           </Routes>
           
           <Footer/>
