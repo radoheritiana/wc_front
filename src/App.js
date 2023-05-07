@@ -1,5 +1,6 @@
 import './App.css';
 import './styles/style.css';
+import 'animate.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
@@ -12,16 +13,8 @@ import Login from './components/Login';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  //const [hostname, setHostname] = useState('');
 
   useEffect(() => {
-    // let _hostname = window.location.href;
-    // let i = _hostname.indexOf("/frontend");
-    // _hostname = _hostname.substring(0, i);
-
-    // _hostname += "/frontend";
-
-    // setHostname(_hostname);
 
     setTimeout(() => {
       setLoading(false);
@@ -30,9 +23,6 @@ function App() {
   }, []);
 
   return (
-    /**
-     * TODO : addn basename='/frontend' to BrowserRouter
-     */
     <BrowserRouter>
       {loading && <div className='start-loading'>
           <img src={'/assets/loading-dot.gif'} alt="start-loading"/>
