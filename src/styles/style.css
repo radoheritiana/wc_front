@@ -1,0 +1,78 @@
+@import url('fonts.css');
+@import url('scrollbar.css');
+@import url('colors.css');
+@import url('testimonials.css');
+@import url('footer.css');
+@import url('button.css');
+@import url('landing_page.css');
+@import url('navbar.css');
+@import url('prediction.css');
+@import url('about.css');
+@import url('login.css');
+@import url('history.css');
+
+::selection {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Aloevera-Bold";
+    letter-spacing: .2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    /* margin-bottom: 3rem; */
+}
+
+body {
+    background-color: var(--main-color);
+    color: white;
+    margin: 0;
+}
+
+p,
+span {
+    font-family: 'Inter-Regular', 'Sans Serif';
+}
+
+main {
+    margin-left: 5rem;
+}
+
+@media only screen and (max-width:600px) {
+    main {
+        margin-left: inherit;
+    }
+}
+
+section {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter-Regular', 'Sans Serif';
+    font-weight: 500;
+}
+
+.blur {
+    -webkit-filter: blur(8px);
+    filter: blur(15px);
+}
+
+.animate__animated.animate__slideInLeft {
+    --animate-duration: 2s;
+  }
+
+  .animate__animated.animate__slideInRight {
+    --animate-duration: 2s;
+  }

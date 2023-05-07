@@ -1,0 +1,15 @@
+@import url('colors.css');
+
+.history-same-date li {
+    margin: 1rem;
+}
+
+.history-same-date {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history-same-date h3 {
+    color: var(--accent-color);
+}

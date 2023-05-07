@@ -1,0 +1,65 @@
+@import url('colors');
+
+.testimonial {
+    display: none;
+}
+
+.testimonial:first-of-type {
+    display: flex;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.testimonial img {
+    width: 160px;
+    border-radius: 10px;
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonial-username {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.testimonial-content {
+    position: relative;
+    display: block;
+    margin: 1rem;
+}
+
+.testimonial-content::before {
+    content: "“";
+    position: absolute;
+    color: var(--accent-color);
+    font-size: 50px;
+    font-weight: bold;
+    top: -2rem;
+    left: -2rem;
+
+}
+
+.testimonial-content::after {
+    content: "“";
+    position: absolute;
+    color: var(--accent-color);
+    font-size: 50px;
+    font-weight: bold;
+    bottom: -2rem;
+    right: 2rem;
+}
+
+section>h2 {
+    text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+    .testimonial-content::after {
+        bottom: -4rem;
+    }
+}

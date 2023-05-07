@@ -1,0 +1,79 @@
+.abstract-patterns {
+    position: absolute;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h2 {
+    margin-bottom: 2rem;
+}
+
+.info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+.info p {
+    max-width: 60vw;
+}
+
+.info-right {
+    text-align: right;
+}
+
+.info img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.iir img {
+    width: 40vw;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(1);
+    transition: all .2s ease-out;
+
+}
+
+.iir h1 {
+    margin: 1.5rem;
+}
+
+.iir h2 {
+    margin-bottom: 1rem;
+}
+
+.iir img:hover {
+    filter: grayscale(0);
+    transition: all .2s ease-in;
+}
+
+.iir > article {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.iir > article div{
+    max-width: 50vw;
+    padding: 2rem;
+}
+
+.iir, .about{
+    padding: 2rem;
+}
+
+
+@media only screen and (max-width:600px) {
+    .iir > article {
+        flex-direction: column;
+    }
+
+    .iir article div {
+        width: 100%;
+    }
+}

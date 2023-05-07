@@ -1,0 +1,21 @@
+@import url('colors.css');
+
+.button:hover {
+    transition: all .2s ease-in-out;
+    background-color: #e9c454;
+}
+
+.button {
+    border: none;
+    font-family: 'Inter';
+    font-size: 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+}
